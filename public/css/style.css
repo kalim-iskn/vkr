@@ -1,0 +1,1286 @@
+@font-face {
+    font-family: Underdog;
+    src: url(/fonts/underdog_regular.otf);
+}
+
+@font-face {
+    font-family: TuschTouch;
+    src: url(/fonts/10369.ttf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    background-image: url('/img/uzor.png');
+    overflow-x: hidden;
+    /*background-attachment: fixed;background-size:cover;*/
+}
+
+#menu {
+    background: #2C1F30;
+    width: 100%;
+    height: 60px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#menu_main {
+    background: #2C1F30;
+    width: 100%;
+    height: 60px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#mobile_profile {
+    display: none;
+}
+
+#img_menu {
+    height: 60px;
+    float: left;
+    margin-left: 10%;
+    margin-right: 100px;
+}
+
+#img_settings {
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+#input_marks {
+    width: 40%;
+    padding: 5px;
+    outline: none;
+    font-size: 20px;
+    font-family: TuschTouch;
+    font-weight: 600;
+    margin-top: 14px
+}
+
+.ravno {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: Underdog;
+}
+
+.term_actual_text {
+    font-size: 20px;
+    color: gray;
+}
+
+#menu_button {
+    height: 100%;
+    border: none;
+    background: none;
+    font-family: Underdog;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+#menu_button:hover {
+    color: #B6B6B6;
+    transition: 0.3s;
+}
+
+#main {
+    margin-left: 7%;
+    margin-right: 7%;
+    background: #f0f2f5;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+#main2 {
+    margin-left: 22%;
+    margin-right: 22%;
+    background: #f0f2f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 0px 0px;
+}
+
+#zag {
+    font-family: TuschTouch;
+    padding: 15px;
+    background: #f0f2f5;
+    font-size: 33px;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+.even_row {
+    background: #f0f2f5;
+}
+
+.odd_row {
+    background: white;
+}
+
+#name {
+    text-align: center;
+}
+
+#block {
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.tt-mark {
+    font-size: 33px;
+    color: #19143D;
+    text-align: center;
+}
+
+.tt-subj {
+
+}
+
+.tt-task {
+    height: 70px;
+}
+
+tr, td {
+    padding: 8px;
+    font-family: TuschTouch;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+td {
+    overflow: hidden;
+    height: 56px;
+}
+
+th {
+    font-family: Underdog;
+    font-size: 18px;
+    padding: 14px;
+    background: #19143D;
+    color: white;
+    border: none
+}
+
+.date {
+    background: #6D0520;
+    color: white;
+    min-height: 24px;
+    font-size: 23px;
+    font-family: Underdog;
+    background-image: url('/img/uzor_date.png');
+    font-weight: 600;
+}
+
+#button_next {
+    height: 53px;
+    width: 15%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #6D0520;
+    color: white;
+    font-family: Underdog;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    font-size: 19px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+#button_next:hover {
+    background-image: url('/img/uzor_date.png');
+    transition: 2s;
+}
+
+#setting_button:hover {
+    background-image: url('/img/uzor_date.png');
+    transition: 2s;
+}
+
+#setting_button {
+    height: 56px;
+    width: 15%;
+    margin-right: -15%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #6D0520;
+    color: white;
+    font-family: Underdog;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    font-size: 21px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.div_table {
+    overflow: auto;
+    width: 65%;
+}
+
+
+
+#footer {
+    background: #CDD4C2;
+    margin-top: 40px;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 0;
+    font-family: Underdog;
+    font-size: 18px;
+    line-height: 1.4;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+#settings_block {
+    float: right;
+    padding-right: 10%;
+    color: #;
+    font-size: 19px;
+    /*text-decoration:underline;*/
+    display: inline
+}
+
+#button_exit {
+    height: 100%;
+    border: none;
+    background: #C6A369;
+    font-family: Underdog;
+    color: white;
+    font-size: 20px;
+    margin-left: 25%;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+#button_exit:hover {
+    background: #6D0520;
+    transition: 0.3s;
+}
+
+.table_marks {
+    width: 100%;
+}
+
+.table_marks td {
+    border-bottom: 2px groove #19143D;
+    border-right: 2px groove #19143D;
+}
+
+.table_lessons td {
+    border-bottom: 2px groove #19143D;
+    border-right: 2px groove #19143D;
+    border-left: 2px groove #19143D;
+}
+
+.table_lessons, .table_marks {
+    display: inline-table;
+    border-spacing: 0px 0px;
+}
+
+.table_lessons {
+    width: 35%;
+    table-layout: auto;
+}
+
+.mark_mob {
+    display: none;
+}
+
+#container {
+    display: none;
+}
+
+.br {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.term_table {
+    width: 100%;
+    border-color: #19143D;
+}
+
+#term {
+    padding: 10px;
+    font-size: 19px;
+    font-family: Underdog;
+    outline: none;
+    background: #6D0520;
+    color: white;
+    background-image: url('/img/uzor_date.png');
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+/*////////////////////////////////////////////////////////////////////////////КАБИНЕТ ПОЛЬЗОВАТЕЛЯ//////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////КАБИНЕТ ПОЛЬЗОВАТЕЛЯ//////////////////////////////////////////////////////////////////////////*/
+#info {
+    width: 75%;
+}
+
+#info_user {
+    font-family: TuschTouch;
+    height: 100%;
+    font-weight: 100;
+    font-size: 21px;
+}
+
+#name_user {
+    font-family: Underdog;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 2px;
+    border-bottom: 2px dashed #6D0520;
+}
+
+#user_photo {
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+    border: 4px solid white;
+    width: 97%;
+    max-height: 650px;
+}
+
+#user {
+    margin-top: 10px;
+}
+
+#rating {
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    padding: 10px;
+    min-height: 20px;
+    background: white;
+    margin-left: 0%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#place {
+    font-family: Underdog;
+    font-size: 60px;
+    color: #19143D;
+}
+
+#total {
+    font-size: 13px;
+    margin-top: 15px;
+    color: gray;
+}
+
+#change_foto_block {
+    width: 97%;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+    border: 4px solid #DFE6ED;
+    background: #DFE6ED;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Underdog;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    cursor: pointer;
+}
+
+.modal_zag {
+    font-family: Underdog;
+}
+
+.link_name {
+    text-decoration: none;
+    color: #6D0520;
+}
+
+hr {
+    margin-bottom: 0px;
+}
+
+#button {
+    border: none;
+    background: #19143D;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-family: Underdog;
+    -webkit-appearance: none;
+}
+
+button:hover {
+    background: #3281ef;
+}
+
+#file {
+    display: none;
+}
+
+#results {
+    margin: 10px 0;
+    line-height: 2em;
+}
+
+#results dt {
+    width: 8em;
+    float: left;
+    clear: both;
+    font-weight: bold;
+}
+
+#preview img {
+    min-width: 200px;
+    min-height: 200px;
+    background: #ddd;
+    padding: 0px;
+    border: 4px solid white;
+    max-width: 100%;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#results {
+    font-family: TuschTouch;
+    font-size: 18px;
+}
+
+#image_dimensions {
+    width: 100%;
+}
+
+#search_user {
+    width: 100%;
+    margin-top: 10px;
+    padding: 6px;
+    font-size: 17px;
+    font-family: TuschTouch;
+    font-weight: bold;
+    outline: none;
+}
+
+/*////////////////////////////////////////////////////////////////////////////КАБИНЕТ ПОЛЬЗОВАТЕЛЯ//////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////КАБИНЕТ ПОЛЬЗОВАТЕЛЯ//////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////////////////////////////НАСТРОЙКИ СЕРВИСА/////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////НАСТРОЙКИ СЕРВИСА/////////////////////////////////////////////////////////////////////////////*/
+#input_settings {
+    padding: 4px;
+    font-size: 17px;
+    font-family: TuschTouch;
+    font-weight: bold;
+    width: 420px;
+    outline: none;
+    margin-top: 5px;
+}
+
+#label_settings {
+    font-size: 17px;
+    font-family: Underdog;
+    color: #6D0520;
+}
+
+#prev_settings {
+    color: gray;
+    font-size: 18px;
+    font-family: TuschTouch;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+}
+
+#check_settings {
+    transform: scale(1.5);
+    opacity: 0.9;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10px;
+}
+
+#preview img {
+    max-width: 40%;
+    min-height: 150px;
+    min-width: 200px;
+}
+
+#msgbox, #alert_span, #warning, #error {
+    color: red;
+    font-family: Underdog;
+}
+
+.username {
+    width: 325px;
+    margin-left: -4px;
+    padding: 4px;
+    font-size: 17px;
+    font-family: TuschTouch;
+    font-weight: bold;
+    outline: none;
+    margin-top: 5px;
+    padding-left: 1px;
+}
+
+.link_text {
+    width: 98px;
+    padding: 4px;
+    font-size: 17px;
+    font-family: TuschTouch;
+    font-weight: bold;
+    outline: none;
+    margin-top: 5px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////НАСТРОЙКИ СЕРВИСА/////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////НАСТРОЙКИ СЕРВИСА/////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 1630px) {
+    th {
+        font-size: 16px;
+    }
+
+    td {
+        font-size: 16px;
+        height: 10px
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    th {
+        font-size: 14px;
+    }
+
+    td {
+        font-size: 14px;
+        height: 8px
+    }
+
+    .table_lessons {
+        width: 25%;
+    }
+
+    .div_table {
+        width: 75%;
+    }
+
+    #term {
+        font-size: 16px;
+        padding: 8px
+    }
+
+    #input_marks {
+        font-size: 16px;
+        margin-top: 11px;
+        width: 50%;
+    }
+
+    .ravno {
+        font-size: 18px
+    }
+}
+
+#socials {
+    position: relative;
+    width: 22px;
+    top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#friend_block {
+    padding: 10px;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    background: white;
+    font-family: TuschTouch;
+    font-size: 17px;
+}
+
+#friend_name {
+    font-size: 22px;
+    font-family: Underdog;
+    font-weight: bold;
+    color: #19143D;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #19143D;
+}
+
+#link_friend {
+    text-decoration: none;
+    color: #19143D;
+}
+
+#link_friend:hover {
+    text-decoration: underline;
+}
+
+#address_friend {
+    font-size: 20px;
+    font-family: Underdog;
+    color: #6D0520;
+    font-weight: bold;
+    margin-top: 10px
+}
+
+#friend_button {
+    height: 56px;
+    width: 15%;
+    margin-right: -15%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #6D0520;
+    color: white;
+    font-family: Underdog;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    font-size: 21px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+#delete_krestik {
+    width: 30px;
+    cursor: pointer;
+}
+
+#goback {
+    height: 100%;
+    position: fixed;
+    background: none;
+    padding: 20px;
+    font-family: Underdog;
+    cursor: pointer;
+    font-size: 0;
+    width: 60px;
+
+}
+
+#goback:hover {
+    background: linear-gradient(to bottom, #19143D 0%, rgba(125, 185, 232, 0) 100%);
+    background: -moz-linear-gradient(to bottom, #19143D 0%, rgba(125, 185, 232, 0) 100%);
+    background: -webkit-linear-gradient(to bottom, #19143D 0%, rgba(125, 185, 232, 0) 100%);
+    padding: 20px;
+    color: white;
+    font-family: Underdog;
+    cursor: pointer;
+    font-size: 20px
+}
+
+/*////////////////////////////////////////////HELP///////////////////////////////////////////////////////////////////////////*/
+#question {
+    padding: 10px;
+    background: #6D0520;
+    font-weight: 600;
+    color: white;
+    font-family: Underdog;
+    font-size: 22px;
+    cursor: pointer;
+    border-top: 2px solid #19143D;
+}
+
+#answer {
+    padding: 10px;
+    font-size: 20px;
+    font-family: TuschTouch;
+}
+
+@media screen and (max-width: 60em) {
+    .term_actual_text {
+        font-size: 14px;
+    }
+
+    #question {
+        padding: 7px;
+        font-size: 20px;
+    }
+
+    #answer {
+        font-size: 18px;
+    }
+
+    #goback {
+        display: none;
+    }
+
+    .button_go_to_term {
+        display: none;
+    }
+
+    #input_marks {
+        width: 40%;
+        padding: 5px;
+        outline: none;
+        font-size: 12px;
+        font-family: TuschTouch;
+        font-weight: 600;
+        margin-top: 6px
+    }
+
+    .ravno {
+        font-size: 16px;
+    }
+
+    #mobile_profile {
+        display: block;
+    }
+
+    #no_mobile {
+        display: none;
+    }
+
+    .no_mobile {
+        display: none;
+    }
+
+    #main2 {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .table_lessons td {
+        max-width: 0;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+
+    .table_lessons {
+        width: 35%;
+    }
+
+    .div_table {
+        width: 65%;
+    }
+
+    #setting_button {
+        display: none;
+    }
+
+    #term {
+        padding: 5px;
+        font-size: 12px;
+        font-family: Underdog;
+        outline: none;
+        background: #6D0520;
+        color: white;
+        background-image: url('/img/uzor_date.png');
+        display: inline-block;
+        margin-top: 0px;
+        vertical-align: middle;
+    }
+
+    .mobile {
+        display: table-row;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
+    .br {
+        display: inline;
+    }
+
+    #main {
+        margin-left: 1%;
+        margin-right: 1%;
+        padding: 5px;
+    }
+
+    .menu-btn {
+        width: 50px;
+        height: 100%;
+        color: #FFF;
+        background: none;
+        cursor: pointer;
+        display: block;
+        float: left;
+        outline: none;
+    }
+
+    #container {
+        width: 100%;
+        font-size: 26px;
+        text-align: center;
+        height: 50px;
+        background: #2C1F30;
+        display: block;
+        position: fixed;
+        color: white;
+        font-family: Underdog;
+
+    }
+
+    #block {
+        padding: 3px;
+    }
+
+    #zag {
+        font-size: 24px;
+        padding: 3px;
+    }
+
+    #button_next {
+        width: 49%;
+        height: 46px;
+        font-size: 17px;
+        -webkit-appearance: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    hr {
+        margin-top: 53px;
+    }
+
+    #name {
+        display: none;
+    }
+
+    .date {
+        font-size: 18px;
+        height: 40px;
+    }
+
+    tr, td {
+        padding: 4px;
+        font-size: 13px;
+        -webkit-appearance: none;
+    }
+
+    th {
+        font-size: 14px;
+    }
+
+    .tt-mark {
+        font-size: 26px;
+    }
+
+    .mark {
+        display: none;
+    }
+
+    .mark_mob {
+        display: table-cell;
+    }
+
+    #mob_menu_button {
+        width: 100%;
+        background: white;
+        border: none;
+        border-bottom: 2px solid #F3F3F3;
+        color: black;
+        cursor: pointer;
+        font-family: TuschTouch;
+        text-align: left;
+        padding: 10px;
+        font-size: 23px;
+        outline: none;
+        -webkit-appearance: none;
+    }
+
+    #information_block_mob {
+        background: white;
+        font-family: TuschTouch;
+        padding: 5px;
+        font-size: 19px
+    }
+
+    #name_profile_mob {
+        color: white;
+        font-family: Underdog;
+        text-shadow: -1px -1px 0 #6D0520,
+        1px -1px 0 #6D0520,
+        -1px 1px 0 #6D0520,
+        1px 1px 0 #6D0520;
+        position: absolute;
+        bottom: 8px;
+        left: 5px;
+        font-size: 25px;
+        font-weight: 600
+    }
+
+    #galka_mob {
+        width: 24px;
+        position: relative;
+        top: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 50px;
+        left: 4px
+    }
+
+    #block_mob {
+        text-align: center;
+        background: #DFE6ED;
+        color: black;
+        font-family: Underdog;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    #block_foto_mob {
+        height: 320px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #delete_krestik {
+        width: 30px;
+        margin-top: -5px;
+    }
+
+    #friend_button {
+        height: 40px;
+        font-size: 18px;
+        width: 30%;
+        margin-right: -30%;
+        margin-top: -35px;
+    }
+
+    #main {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #friend_name {
+        font-size: 18px;
+    }
+
+    #address_friend {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 500px) {
+    #hr_another {
+        margin-top: 9px;
+    }
+
+    #friend_block {
+        font-size: 15px;
+    }
+
+    #friend_button {
+        margin-top: 3px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #name_profile_mob {
+        font-size: 20px;
+    }
+
+    #block_foto_mob {
+        height: 220px;
+    }
+
+    #information_block_mob {
+        font-size: 16px;
+    }
+
+    #rating {
+        font-size: 15px;
+    }
+
+    #place {
+        font-size: 45px;
+    }
+
+    #total {
+        font-size: 13px;
+    }
+
+    #galka_mob {
+        width: 22px;
+    }
+
+    #block_mob {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    #name_profile_mob {
+        font-size: 19px;
+    }
+
+    #galka_mob {
+        width: 20px;
+    }
+
+    #block_mob {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #name_profile_mob {
+        font-size: 17px;
+    }
+
+    #galka_mob {
+        width: 18px;
+        top: 2.5px;
+    }
+
+    #total {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #input_marks {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .ravno {
+        margin-left: 4px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .table_lessons {
+        width: 45%;
+    }
+
+    .div_table {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #button_exit {
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #button_exit {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #menu_button, #button_exit {
+        margin: 0px;
+    }
+
+    #img_menu {
+        margin-left: 8%;
+    }
+
+    #setting_button {
+        width: 18%;
+        margin-right: -18%;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    #term {
+        width: 100%;
+    }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////PROFILE_INFORMATION_ABOUT_USER//////////////////////////////////////////////////////////////////////////////////////*/
+#galka {
+    cursor: pointer;
+    position: relative;
+    top: 6px;
+    width: 30px;
+}
+
+#list_user {
+    background: white;
+    background-image: url('/img/uzor.png');
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Underdog;
+    font-size: 20px;
+}
+
+.button_go_to_term {
+    height: 56px;
+    width: 20%;
+    margin-right: -15%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #6D0520;
+    color: white;
+    font-family: Underdog;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    font-size: 21px;
+    outline: none;
+    margin-right: -20%;
+    -webkit-appearance: none;
+}
+
+.button_go_to_term:hover {
+    background-image: url('/img/uzor_date.png');
+    transition: 2s;
+}
+
+.diary tr {
+    background: white !important;
+}
+
+#notification_name {
+    padding: 5px;
+    color: white;
+    background: #3285DA;
+    font-size: 18px;
+}
+
+#img_info {
+    width: 30px;
+}
+
+#notification_text {
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 1440px) {
+    #notification_text, #notification_name {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #img_info {
+        width: 22px;
+    }
+
+    #name_user {
+        font-size: 25px;
+    }
+
+    #galka {
+        width: 25px;
+    }
+
+    #rating {
+        font-size: 18px;
+    }
+
+    #total {
+        font-size: 12px;
+    }
+
+    #place {
+        font-size: 50px;
+    }
+
+    #goback {
+        width: 60px;
+        padding: 10px;
+    }
+
+    #goback:hover {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #name_user {
+        font-size: 22px;
+    }
+
+    #galka {
+        top: 5px;
+        width: 22px;
+    }
+
+    #rating {
+        font-size: 16px;
+    }
+
+    #total {
+        font-size: 11px;
+    }
+
+    #place {
+        font-size: 40px;
+    }
+
+    #list_user {
+        font-size: 17px;
+    }
+
+    #change_foto_block {
+        font-size: 15px;
+    }
+
+    .button_go_to_term {
+        font-size: 18px;
+        width: 22%;
+        margin-right: -22%;
+    }
+
+    #goback {
+        width: 50px;
+        padding: 8px;
+
+    }
+
+    #goback:hover {
+        padding: 8px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    #rating {
+        font-size: 14px;
+    }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////PROFILE_INFORMATION_ABOUT_USER//////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////BLOG//////////////////////////////////////////////////////////////////////////////////////*/
+
+#post_img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+#hr_posts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+#post_blog {
+    background: white;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 17px;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+
+#about_post {
+    color: #19143D;
+    font-weight: bold;
+}
+
+#text_post {
+    margin-top: -14px;
+    line-height: 28px
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////BLOG//////////////////////////////////////////////////////////////////////////////////////*/

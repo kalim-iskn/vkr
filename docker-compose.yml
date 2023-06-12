@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  php_fpm:
+    container_name: vkr_php
+    build: .
+    user: www-data
+    expose:
+      - 9000
+    ports:
+      - "29:20"
+    depends_on:
+      - database
+    volumes:
+      - .:/opt/app
+      - /var/log/vkr/php:/var/log/app
+    networks:
+      - vkr_network
+
+  database:
+    container_name: vkr_db
+    image: postgres:15rc1-alpine
+    environment:
+      - "POSTGRES_DB=${DB_DATABASE}"
+      - "POSTGRES_USER=${DB_USERNAME}"
+      - "POSTGRES_PASSWORD=${DB_PASSWORD}"
+    volumes:
+      - /var/data/vkr/postgres/:/var/lib/postgresql/data
+    ports:
+      - 5445:5432
+    networks:
+      - vkr_network
+
+  nginx:
+    container_name: vkr_nginx
+    image: nginx:1.23.1-alpine
+    ports:
+      - 200:80
+    volumes:
+      - ./:/opt/app
+      - /var/log/vkr/nginx/:/var/log/nginx/
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - vkr_network
+    depends_on:
+      - php_fpm
+
+networks:
+  vkr_network:
+    driver: bridge
